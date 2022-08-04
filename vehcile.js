@@ -170,7 +170,7 @@ function createPlanForVehcile(vType) {
         }
         vehicle["planType"] = plan;
         createPriceBookUSDandYEN(vehicalType, plan);
-        hideSection('planPriceOfVehicle');
+       
     });
 
 }
@@ -197,7 +197,7 @@ function createPriceBookUSDandYEN(vType  , vPlanType) {
         vehicle["price"] = price/oneUSDToYEN;
         listOfRegisterVehicle.push(vehicle);
         alert("SucessFull Pass Create" + JSON.stringify(vehicle));
-        hideSection('vehicleComapany');
+        
     });
   
 }
