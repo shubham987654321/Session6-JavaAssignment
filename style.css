@@ -1,0 +1,366 @@
+* {
+    margin: 0 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+nav img {
+    height: 14%;
+    width: 17%;
+    float: left;
+    margin: 5px;
+}
+
+.fixed-top {
+    z-index: 20;
+    position: fixed;
+    background-color: rgb(17 5 68 / 96%) !important;
+
+    margin-top: -10vh;
+    box-shadow: 2px 2px 3px wheat;
+    background-image: url('Snow_falling1.gif');
+    background-color: rgb(136, 72, 72);
+}
+
+header {
+    background-image: url('imge12.jpg');
+    background-repeat: no-repeat;
+    background-size: 97vw 80vh;
+    height: 96vh;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #28a745;
+}
+
+a {
+    color: #cadace;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: justify;
+    text-shadow: 2px 2px 1px rgb(128, 115, 115);
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+.header-content {
+    margin-top: 10vh;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type=text]:focus {
+    background-color: rgb(219, 223, 225);
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+textarea {
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: rgb(6, 10, 6);
+}
+
+input[type=radio] {
+    margin-left: 10px;
+}
+
+
+/* Header content  */
+
+.header-content span {
+    color: rgba(0, 100, 230, 0.953);
+    margin: 0 auto;
+    text-shadow: 2px 2px 1px gray;
+}
+
+.header-content a {
+    color: rgb(180, 206, 180);
+}
+
+
+/* form legand */
+
+a legend {
+    color: rgb(26, 145, 201);
+    font-weight: bold;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(35, 0, 116, 0.994);
+
+    text-decoration: none;
+    height: 10vh;
+    margin-bottom: 10px;
+}
+
+
+/* Add Employee */
+
+
+/* Park Section Form */
+
+.form_background {
+    background-image: url('image\ 5.svg');
+    background-color: whitesmoke;
+    background-size: contain;
+    height: auto;
+}
+
+#addEmployee,
+#addVehicle {
+    padding-top: 10%;
+    margin-top: 5vh;
+    padding: 10px;
+    margin: 0 auto;
+    width: 60vw;
+    padding-top: 10vh;
+    margin-top: 5vh;
+    font-size: 1.2em;
+}
+
+form {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+    font-family: cursive;
+    box-shadow: 4px 4px 2px gray;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+#pricing {
+    margin-top: 5vh;
+}
+
+#pricing .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    justify-content: space-around;
+}
+
+#pricing .container .circle {
+    background-color: white;
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px gray;
+    padding: 10%;
+}
+
+.pricing {
+    background-color: white;
+    box-shadow: -2px 2px 4px gray;
+    margin-top: 20vh;
+    padding-top: 6%;
+    height: 50%;
+    width: 300px;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+}
+
+
+/* Get in Touch  */
+
+#giveFeedback {
+    height: 70vh;
+    margin: 0 auto;
+    width: 98vw;
+    margin-top: 10vh;
+    padding-top: 5%;
+    padding-right: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    /* border: 1px solid red; */
+    padding-bottom: 10%;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 3%;
+}
+
+#giveFeedback form {
+    position: relative;
+    background-color: inherit;
+    padding: 10px;
+    width: 50vw;
+}
+
+#giveFeedback input[type=text],
+input[type=email],
+input[type=password],
+textarea,
+[type=number] {
+    border-radius: 10px;
+    background-color: white;
+    line-height: 10px;
+}
+
+
+/* All CSS related to buttton */
+
+
+/* Submit button */
+
+.button-crt {
+    position: relative;
+    border: 0px;
+    letter-spacing: 1px;
+    background-color: #ff219f;
+    align-self: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    box-shadow: 2px 2px 4px lightgray;
+    animation: transform 1s;
+    margin: 1rem;
+    outline: 0;
+    padding: 1px;
+    margin-left: 38%;
+}
+
+.button-crt:hover {
+    background-color: #8f024f;
+}
+
+.button-crt:active {
+    transform: scale(1.05, 1.05);
+}
+
+.button-rt {
+    position: relative;
+    padding: 10px;
+    border: 0px;
+    letter-spacing: 1px;
+    background-color: green;
+    width: auto;
+    padding: 10px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    box-shadow: 2px 2px 4px lightgray;
+    animation: transform 1s;
+    margin: 1rem;
+    outline: 0;
+}
+
+.button-rt:hover {
+    background-color: rgb(9, 57, 9);
+}
+
+.button-rt:active {
+    transform: scale(1.05, 1.05);
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 100%;
+}
+
+
+/* footer Css */
+
+.footer {
+    background-color: #0a2541;
+    text-align: center;
+    padding: 10px;
+    color: #eee;
+}
+
+
+
+/* Collapsable Css */
+
+.email {
+    transform: rotate(336deg) scale(1.2);
+
+}
+
+.Collapse {
+    display: none;
+}
+
+
+/* Js Property Css  Session 6*/
+
+.hideField{
+    display: none;
+}
+
+
+/* next and back button Css */
+
+.formDropDown button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+   
+  }
+  
+
+
+  #alertName{
+      color: red;
+  }
+
+
+  select{
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: rgb(6, 10, 6);
+  }
+
+  /* Label Css */
+
+  #labelInfo{
+      color: blue;
+      text-shadow: 2px 2px 2px rgb(228, 212, 212);
+      font-size: 2em;
+  }
