@@ -198,8 +198,6 @@ function createPriceBookUSDandYEN(vType  , vPlanType) {
         listOfRegisterVehicle.push(vehicle);
         alert("SucessFull Pass Create" + JSON.stringify(vehicle));
         hideSection('vehicleComapany');
-        hideSection('planPriceOfVehicle');
-        hideSection('planOfVehicle');
     });
   
 }
