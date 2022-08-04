@@ -25,7 +25,7 @@ const listOfRegisterVehicle = [];
 const listOfIdOfFieldvehicle = [
     "vehicleComapany",
     "vehicleModel",
-    "vehicleType",
+    "vecType",
     "vehicleNumber",
     "employeeId",
     "identification",
@@ -170,7 +170,6 @@ function createPlanForVehcile(vType) {
         }
         vehicle["planType"] = plan;
         createPriceBookUSDandYEN(vehicalType, plan);
-       
     });
 
 }
@@ -196,11 +195,12 @@ function createPriceBookUSDandYEN(vType  , vPlanType) {
         let price = e.target.value;
         vehicle["price"] = price/oneUSDToYEN;
         listOfRegisterVehicle.push(vehicle);
-        alert("SucessFull Pass Create" + JSON.stringify(vehicle));
-        
+        alert("SucessFull Pass Create" + JSON.stringify(vehicle) + hideSection('vehicleComapany'));
+      
     });
   
 }
+
 
 
 //  create   Option tag from Select box Price for vehicle Type(Cycle, MotorCycle , FourWheeler) and its plan  (perMonth, PerDay, Year)
