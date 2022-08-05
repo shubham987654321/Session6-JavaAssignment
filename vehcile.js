@@ -120,10 +120,12 @@ identification.addEventListener("change", (e) => {
 // Event Listner on Select of SelectBox (Cycle, MotorCycle , FourWheeler)
 document.getElementById("vehicleType").addEventListener("change", (e) => {
     e.preventDefault();
+  
     let value = e.target.value;
     let currentId = e.target.id;
     let currentClass = listOfIdOfFieldvehicle[2];
     let nextClass = listOfIdOfFieldvehicle[3];
+    console.log('vehicle type is called '+value)
     vehicle["vehcileType"] = value;
     // hide the Current field from UI
     hideSection(currentClass);
@@ -196,6 +198,7 @@ function createPriceBookUSDandYEN(vType  , vPlanType) {
         vehicle["price"] = price/oneUSDToYEN;
         listOfRegisterVehicle.push(vehicle);
         alert("SucessFull Pass Create" + JSON.stringify(vehicle) + hideSection('vehicleComapany'));
+        document.getElementById('form2').reset();  // Reset
       
     });
   
