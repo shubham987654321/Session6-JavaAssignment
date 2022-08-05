@@ -208,7 +208,7 @@ function createPriceBookUSDandYEN(vType  , vPlanType) {
 
 //  create   Option tag from Select box Price for vehicle Type(Cycle, MotorCycle , FourWheeler) and its plan  (perMonth, PerDay, Year)
 function createPrice(vType  , vPlanType) { 
-    let myString = "";
+    let myString =  `<option value=""> Select  Any Currency</option>`;;
     for (let [key, value] of vType) {
         if (key == vPlanType) {
             myString +=
