@@ -270,10 +270,13 @@ phoneId.addEventListener("change", (e) => {
     emp["confirmPassword"] = "";
     emp["phone"] = "";
     document.getElementById("alertName").innerHTML = "";
+    document.getElementById('form1').reset();  // Reset
     hideSection(nextClass);
+    
   } else {
     messageForName = "Phone Number length Should be greater than 8...";
     document.getElementById("alertName").innerHTML =
       ` <i>` + messageForName + `</i>`;
   }
+
 });
